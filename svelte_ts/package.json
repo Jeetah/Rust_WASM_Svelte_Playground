@@ -1,0 +1,21 @@
+{
+  "name": "my-svelte-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "wasm": "rm -rf ./rust-crate/pkg && wasm-pack build ./rust-crate --target web --out-name rust-crate",
+    "dev": "vite",
+    "build": "vite build",
+    "preview_built": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^1.1.0",
+    "carbon-components-svelte": "^0.70.12",
+    "svelte": "^3.52.0",
+    "vite": "^3.2.3"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  }
+}
